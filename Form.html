@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORMS PALYAM</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body bgcolor="orange">
+
+        <center><u><tt><big>REGISTRATION  FORM OF RGUKT SKLM STUDENT AT HOSTEL</big></tt></u></center><br><br>
+        <form action="/action_page.php" id="users" method="get" target="_blank">
+            
+            <label for="img">Photo of the student   :</label>
+            <input type="file" name="file upload" accept="image/*" required><br><br>
+            <label for="s">Name of the student :</label>
+            <input type="text" placeholder="ENTER NAME" required><br><br>
+            <label for="f">Father Name :</label>
+            <input type="text" placeholder="ENTER FATHER NAME" required><br><br>
+            <label for="id">ID Number :</label>
+            <input type="text" name="id" id="text" placeholder="ENTER YOUR ID" required><br><br>
+            <label for="mail">College Mail :</label>
+            <input type="text" name="mail" placeholder="COLLEGE MAIL" required><br><br>
+            <label for="number">Enter your Mobile number :</label>
+            <input type="number" max="10" placeholder="ENTER YOUR MOBILE" required><br><br>
+            <label for="gender">Gender</label>
+            <select name="gender" id="select" required>
+                <option value="MALE">MALE</option>
+                <option value="FEMALE">FEMALE</option>
+                <option value="TRANSGENDER" selected>TRANSGENDER</option>
+            </select><br><br>
+            <label for="class">Class  :</label>
+            <input type="radio" id="PUC-1" name="class" value="PUC-2">PUC-1  
+            <input type="radio" value="PUC-2" >PUC-2  <br><br>
+            <label for="section">Section  :</label>
+            <input type="text" id="section" placeholder="ENTER YOUR SECTION" required><br><br>
+            <label for="">Hostel room  :</label>
+            <input type="checkbox" value="SF">SF
+            <input type="checkbox" value="TF">TF
+            <input type="checkbox" value="GF"> GF <br><br>
+            <label for="">Aadhar of student  :</label>
+            <input type="password" pattern="[1234-5678-9012]{12}" placeholder="AADHAR OF STUDENT" required><br><br>
+            <label for="">Date of Birth   :</label>
+            <input type="date">
+            <br><br>
+            <label for="district">District  :</label>
+            <input type="text" max="15" placeholder="YOUR DISTRICT"><br><br>
+            <label for="Pincode">Pincode  :</label>
+            <input type="number" pattern="[999999]{6}" placeholder="PINCODE OF YOUR AREA" required><br><br>
+            <label for="address">Address of student  :</label><br>
+            <textarea name="address" id="sa" cols="30" rows="10" required>Enter your address here</textarea>
+            <div id="captchaBackground">
+                <canvas id="captcha">captcha text</canvas>
+                <input id="textBox" type="text" name="text">
+                <div id="buttons">
+                    <input id="submitButton" type="submit">
+                    <button id="refreshButton" type="submit">Refresh</button>
+                </div>
+                <span id="output"></span>
+            </div><br><br>
+            <input type="submit" name="submit" value="submit">
+        </form>
+    </body>
+</html>
